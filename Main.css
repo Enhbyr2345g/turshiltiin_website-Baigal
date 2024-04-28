@@ -1,0 +1,137 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(Zurag/pexels-sebastians-1276518.jpg);
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    backdrop-filter: blur(15px);
+    background-color: rgba(240, 248, 255, 0.2);
+    border-radius:15px 15px 0 0;
+    padding: 5px 20px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.headerfirst{
+    color: white;
+    font-style: italic;
+}
+.headersecond{
+    display: flex;
+    align-items: center;
+    gap:50px;
+}
+
+
+
+.dropdown {
+    color: white;
+    padding:10px 10px;
+    background-color:rgb(79, 119, 172);
+    border-radius: 10px;
+    position:static;
+    display: block;
+}
+.dropdown:hover{
+    border-radius: 10px 10px 0 0 ;
+}
+.dropdown-content {
+    background-color:rgb(79, 119, 172);
+    display: none;
+    padding: 0 10px;
+    position: absolute;
+    z-index: 2;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}.headersecond ul li {
+    display:inline-block;
+    gap: 20px;
+    padding:10px 20px;
+}
+.headersecond ul :hover{
+    backdrop-filter: blur(15px);
+    background:rgb(79, 119, 172);
+    border-radius:10px ;
+}
+.headersecond ul :active{
+    background-color:rgb(198, 210, 224);
+}
+h2{
+    font-style: italic;
+}
+
+
+.Maincontent{
+    padding: 0 20px;
+    border: 1px solid rgba(255, 255, 255, 0);
+    backdrop-filter: blur(5px); 
+}
+.main-content{
+    display: flex;
+    align-items: center;
+    padding:40px;
+    gap:100px;
+}
+.contentfirst{
+    width: 45%;
+    padding: 40px;
+    border-radius: 10px;
+    backdrop-filter: blur(15px);
+    background-color: rgba(240, 248, 255, 0.2);
+}
+.contentsecond{
+    width: 50%;
+}
+.contents{
+    padding: 40px;
+}
+
+h3 {
+    color:white;
+}
+.Land , .Ocean , .Animal , .Plant {
+    border-radius: 10px;
+    background-color:rgba(240, 248, 255, 0.2);
+    padding:20px;
+}
+.contents h3 a{
+    padding:5px;
+    border:1px solid white;
+    border-radius: 10px;
+}
+.contents h3 a:hover{
+    background-color: white;
+    color:black;
+}
+
+
+footer{
+    backdrop-filter: blur(15px);
+    background-color:rgba(240, 248, 255, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:30px;
+    border-radius: 0 0 15px 15px;
+}
+.fooderfirst ul li a{
+    color:black
+}
+.fooderfirst ul li a:active{
+    color:white;
+}
+.foodersecond ul li {
+    list-style: none;
+}
+.foodersecond ul li {
+    display: inline-block;
+    padding : 0 20px;
+}
