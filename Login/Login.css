@@ -1,0 +1,102 @@
+
+body{
+    display: grid;
+    justify-content: center;
+    background-color: blue;
+    margin:0;
+    padding:50px;
+    gap:20px;
+}
+a{
+    color:white;
+    text-decoration: none;
+}
+.main{
+    background-color: rgb(206, 206, 206);
+    padding:30px;
+    border-radius: 10px;
+    display: grid;
+    justify-content: center;
+    gap:20px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 10px;
+}
+.headerfirst{
+    width: 100%;
+    display: grid;
+    justify-content: center;
+}
+.headerfirst h1{
+    color:blue;
+}
+
+content{
+    justify-content: center;
+    width: 320px;
+    display:grid;
+    gap: 20px;
+}
+.ContentFirst{
+    width: 100%;
+    display: grid;
+    justify-content: center;
+}
+.ContentSecond{
+    width: 100%;
+    display: grid;
+    justify-content: center;
+}
+.ContentSecond input{
+    color:white;
+    width: 100%;
+    height: 30px;
+    padding:0 5px;
+    border:2px solid gray;
+    border-radius:20px;
+}
+.ContentSecond label{
+    
+}
+.ContentThird{
+    width: 100%;
+    display: grid;
+    justify-content: center;
+}
+.ContentThird button{
+    width: 100%;
+    height: 30px;
+    background-color: blue;
+    border-radius: 20px;
+}
+.ContentThird a{
+    color:black;
+}
+
+Footer{
+    display: grid;
+    justify-content: center;
+}
+.FooterFirst{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+    padding:5px;
+    width: 100%;
+    height: 30px;
+    border:1px solid black;
+    border-radius: 20px;
+}
+.FooterFirst:hover{
+    padding:4px;
+    border:2px solid black;
+}
+.FooterSecond{
+    display: grid;
+    justify-content: center;
+}
