@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web</title>
+
+    <style>
+    body{
+        background-color: rgb(217,217,217);
+    }
+    header{
+        height: 100px;
+        width: auto;
+        background-color: rgb(174,229,209);
+        padding:0 10%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .HeadLogo
+    {
+        background-color: none;
+        font-family: 'Times New Roman';
+        font-size: 32px;
+        color: rgb(65,83,128);
+        padding: auto;
+    }
+    .HeadSearch input
+    {
+        height: 35px;
+        width: 200px;
+        background-color: white;
+        font-family: 'Times New Roman';
+        font-size: 14px;
+        border: 2px solid ;
+        border-color: rgb(65,83,128);
+        border-radius: 5px;
+    }
+    
+    menu{
+        height: auto;
+        width: auto;
+
+        display: flex;
+        flex-direction:row;
+        flex-wrap: 0;
+        align-items: end;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 10px;
+
+        background-color: rgb(65,83,128);
+        color: rgb(217,217,217);
+        font-size: 18px;
+        margin: 0;
+        padding:5px 10% 0;
+
+    }
+    #MainBar
+    {
+        display: flex;
+        align-items: center;
+        justify-items: center;
+
+        background-color: rgb(217,217,217);
+        color: rgb(65,83,128);
+        padding: 10px 20px;
+        border-radius: 5px 5px 0 0;
+    }
+    .menuBar
+    {
+        width: auto;
+        display: flex;
+        align-items: center;
+        justify-items: center;
+
+        padding: 10px 20px;
+
+    }
+    .menuBar:hover
+    {
+        display: flex;
+        align-items: center;
+        justify-items: center;
+
+        background-color: rgb(217,217,217);
+        color: rgb(65,83,128);
+        padding: 10px 20px;
+        border-radius: 5px 5px 0 0;
+    }
+    content{
+        width: auto;
+        height: auto;
+        display: grid;
+        grid-template-columns: 7fr 3fr;
+        
+        gap:20px;
+        margin: 30px 6%;
+
+    }
+    .MainContent p{
+        font-family: Arial;
+        font-size: 12px;
+    }
+
+    .MainContent
+    {   
+        height: auto;
+        max-width: 1000px;
+        background-color: rgb(242,242,242);
+        color:black;
+        padding: 10px 30px ;
+
+        border: none;
+        border-radius: 20px;
+    }
+    .SupportContent
+    {
+        height: auto;
+        width: auto;
+        display: grid;
+        grid-template-rows: 1fr ;
+        gap: 30px;
+        border-radius: 20px;
+        
+    }
+
+    .Random
+    {
+        height: auto;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+
+        background-color: rgb(242,242,242);
+        padding:20px 30px;
+        border-radius: 20px;
+    }
+
+    .RandomName
+    {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+
+        background-color: rgb(217,217,217);
+        color: black;
+        padding:10px 10px;
+        margin-bottom: 20px;
+        border: 2px solid rgb(65,83,128);
+        border-radius: 10px;
+
+    }
+    .RandomExplain
+    {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-items: center;
+
+        background-color: none;
+        color: black;
+        padding:0 10px;
+        border :2px solid rgb(65,83,128);
+        border-radius: 10px;
+    }
+    .History
+    {
+        height: auto;
+        width: 1fr;
+        background-color: rgb(242,242,242);
+        font-family: Arial;
+        font-size: 12px;
+        color: black;
+
+        padding:10px 20px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 20px;
+    }
+    .History p{
+        background-color: rgb(217,217,217);
+        padding:10px;
+        border: 2px solid rgb(65,83,128);
+        border-radius: 10px;
+    }
+    footer{
+        height: 100px;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(65,83,128);
+
+        
+    }
+
+    @media (max-width: 800px) {
+        content
+        {
+            grid-template-columns: auto;
+        }
+        .SupportContent
+        {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    
+    </style>
+
+</head>
+
+<!-- 
+heigth
+width
+display
+flex-....
+Background color
+Font
+Font color
+margin
+padding 
+border-size
+border-color
+border-radius
+
+
+-->
+
+
+<body>
+    <header>
+        <div class="HeadLogo">
+            <strong>English</strong>Rules
+        </div>
+        <div class="HeadSearch">
+            <input type="search" >
+        </div>
+    </header>
+    <menu>
+        <div class="menuBar" id="MainBar">Home</div>
+        <div class="menuBar">Parts of speech</div>
+        <div class="menuBar">Figures of speech</div>
+        <div class="menuBar">Tenses</div>
+        <div class="menuBar">Sentences</div>
+        <div class="menuBar">Punctuation</div>
+        <div class="menuBar">A&P voice</div>
+    </menu>
+    <content>
+        <div class="MainContent">
+            <h4>Welcome to EnglishGrammar.org!</h4>
+            <p>Explore the essentials and intricacies of English grammar. Whether for writing or everyday conversation, grammar is the foundation of clear communication.</p>
+            <h3>Getting Started</h3>
+            <p>If you’re a new user, we recommend signing up for free updates and bookmarking the online grammar checker right now. Do this before you continue reading to ensure you have the right tools to improve your grammar and become a better writer.
+                <br><br>
+            Begin your journey with our interactive, online multiple-choice exercises, which are also available as downloadable PDFs. Access all our latest exercises by visiting the Grammar Exercises page. If you’re looking for a specific topic or exercise, please use the search form at the top of this page.</p>
+            <h3>2025 Grammar Guide</h3>
+            <p>We value your feedback on our popular guide, ‘120 Grammar and Vocabulary Mistakes to Avoid,’ freshly updated for 2025. If you haven’t explored it yet, download it now by signing up for our newsletter. Upon confirming your subscription, we’ll send you the PDF download and weekly updates, including the best infographics on grammar, writing, and productivity. No worries, it’s free, and your privacy is our top priority. Your email won’t be shared with anyone else, and you can unsubscribe at any time.
+                <br><br>
+            Connect with us on Facebook by liking our page and follow us on X (@GrammarUpdates) for the latest updates and resources in your newsfeed.</p>
+            <h3>We’d Love to Hear from You</h3>
+            <p>If there’s a specific topic you’d like to learn more about or if you have suggestions to improve our site, we’d love to hear from you. Use our contact form or share your thoughts via one of our social media channels.
+                <br><br>
+            We hope you enjoy the site and wish you much joy on your journey to mastering English grammar.
+                <br><br>
+            Here’s to your successful learning journey!</p>
+
+        </div>
+        <div class="SupportContent">
+            <div class="Random">
+                <nav class="RandomName">
+                    <div>Random Rule Name</div>
+                </nav>
+                <nav class="RandomExplain">
+                    <p>If you’re a new user, we recommend signing up for free updates and bookmarking the online grammar checker right now. Do this before you continue reading to ensure you have the right tools to improve your grammar and become a better writer.</p>
+                </nav>
+            </div>
+
+            <div class="History">
+                <p>We value your feedback on our popular guide, .</p>
+                <p>‘120 Grammar and Vocabulary Mistakes to Avoid,’ freshly updated for 2025. </p>
+                <p>If you haven’t explored it yet, download it now by signing up for our newsletter. Upon confirming your subscription, we’ll send you the PDF download and weekly updates, </p>
+                <p>including the best infographics on grammar, writing, and productivity. No worries, it’s free, and your privacy is our top priority. Your email won’t be shared with anyone else, and you can unsubscribe at any time</p>
+            
+            </div>
+        </div>
+    </content>
+    <footer>
+
+    </footer>
+
+</body>
+</html>
